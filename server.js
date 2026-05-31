@@ -769,9 +769,9 @@ app.use((req, res) => {
 });
 
 // Start server
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`🚀 KyyDL API running on port ${PORT}`);
-  console.log(`📡 Health check: http://localhost:${PORT}/`);
+  console.log(`📡 Health check: http://0.0.0.0:${PORT}/`);
 });
 
 module.exports = app;
